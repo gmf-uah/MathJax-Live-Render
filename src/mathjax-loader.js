@@ -1,6 +1,6 @@
 (function() {
     // MathJax loader with fallback mechanism
-    const localPath = '../node_modules/mathjax-full/es5/tex-chtml.js';
+    const localPath = 'node_modules/mathjax-full/es5/tex-chtml.js';
     const cdnPath = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js';
 
     function loadMathJax(src, onError) {
