@@ -35,6 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial load
     loadContent();
 
-    // Poll for updates
+    // Poll for updates continuously (intentional for application lifetime)
     setInterval(loadContent, pollInterval);
 });
