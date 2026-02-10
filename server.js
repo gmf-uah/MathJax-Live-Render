@@ -22,6 +22,14 @@ const server = http.createServer((req, res) => {
     }
 
     const fullPath = path.join(__dirname, filePath);
+    
+    // Security: Prevent path traversal attacks
+    if (!fullPath.startsWith(__dirname)) {
+        res.writeHead(403, { 'Content-Type': 'text/plain' });
+        res.end('Forbidden');
+        return;
+    }
+    
     const ext = path.extname(fullPath);
     const mimeType = mimeTypes[ext] || 'application/octet-stream';
 
