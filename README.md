@@ -78,16 +78,21 @@ Any changes you save in the text editor will appear in the browser within 1 seco
 
 ### Change Port
 
-Edit `server.js` and modify the `PORT` constant:
+You can change the port using an environment variable:
+```bash
+PORT=3000 npm start
+```
+
+Or edit `server.js` and modify the `PORT` constant:
 ```javascript
-const PORT = 8080;  // Change to your preferred port
+const PORT = process.env.PORT || 8080;  // Change default port
 ```
 
 ### Change Poll Interval
 
-Edit `viewer.html` and modify the `pollInterval` variable:
+Edit `viewer.html` and modify the `pollInterval` constant:
 ```javascript
-let pollInterval = 1000;  // Time in milliseconds (default: 1 second)
+const pollInterval = 1000;  // Time in milliseconds (default: 1 second)
 ```
 
 ### Customize LaTeX Delimiters
