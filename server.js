@@ -21,10 +21,11 @@ const server = http.createServer((req, res) => {
         filePath = '/viewer.html';
     }
 
-    const fullPath = path.join(__dirname, filePath);
+    const fullPath = path.resolve(__dirname, filePath.substring(1));
+    const normalizedBase = path.resolve(__dirname);
     
     // Security: Prevent path traversal attacks
-    if (!fullPath.startsWith(__dirname)) {
+    if (!fullPath.startsWith(normalizedBase + path.sep)) {
         res.writeHead(403, { 'Content-Type': 'text/plain' });
         res.end('Forbidden');
         return;
