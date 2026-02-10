@@ -1,0 +1,25 @@
+{
+  "name": "mathjax-live-render",
+  "version": "1.0.0",
+  "description": "Live LaTeX/MathJax renderer with auto-refresh for text files",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmf-uah/MathJax-Live-Render.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gmf-uah/MathJax-Live-Render/issues"
+  },
+  "homepage": "https://github.com/gmf-uah/MathJax-Live-Render#readme",
+  "dependencies": {
+    "mathjax-full": "^3.2.1"
+  }
+}
