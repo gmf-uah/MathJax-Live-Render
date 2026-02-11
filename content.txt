@@ -1,29 +1,7 @@
-Welcome to MathJax Live Render!
+similar triangles theorem for rotation
+- Rotation keeps distance from the origin constant
+- $$\cos(\alpha)=\frac{x}{r},\,\,\,\sin{\alpha}=\frac{y}{r}$$
 
-This is a sample file that you can edit in Vim (or any text editor).
-The browser will automatically refresh and display your content with LaTeX rendered.
-
-Inline Math Examples:
-The quadratic formula is $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
-Einstein's famous equation: $E = mc^2$.
-
-Display Math Examples:
-
-The integral of $x$ is:
-$$\int x \, dx = \frac{x^2}{2} + C$$
-
-A beautiful identity:
-$$e^{i\pi} + 1 = 0$$
-
-Matrix Example:
-$$A = \begin{bmatrix}
-a & b \\
-c & d
-\end{bmatrix}$$
-
-Greek Letters and Symbols:
-- Alpha: $\alpha$, Beta: $\beta$, Gamma: $\gamma$
-- Sum: $\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$
-- Limit: $\lim_{x \to \infty} \frac{1}{x} = 0$
-
-Try editing this file and watch it update in your browser!
+affine transformation:
+- $\int_5^6$
+- $$\int_5^6$$

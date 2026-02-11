@@ -14,17 +14,10 @@ body {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-#status {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 3px;
-    font-size: 14px;
-    opacity: 0.8;
-}
 .error {
     background-color: #f44336 !important;
+}
+
+.MJXc-display {
+  text-align: left !important;
 }

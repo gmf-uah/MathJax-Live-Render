@@ -8,7 +8,7 @@
     script.src = cdnPath;
     
     script.onload = function() {
-        console.log('MathJax loaded successfully from CDN');
+        
     };
     
     script.onerror = function() {

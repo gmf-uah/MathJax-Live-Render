@@ -5,26 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MathJax Live Render</title>
     <link rel="stylesheet" href="assets/styles.css">
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']],
-                processEscapes: true,
-                processEnvironments: true
-            },
-            svg: {
-                fontCache: 'global'
-            },
-            options: {
-                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-            }
-        };
-    </script>
+    <script src="src/mathjax-init.js"></script>
     <script src="src/mathjax-loader.js"></script>
 </head>
 <body>
-    <div id="status">Watching file...</div>
     <div id="content">Loading...</div>
 
     <script src="src/content-loader.js"></script>
